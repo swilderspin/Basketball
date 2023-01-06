@@ -139,6 +139,10 @@
                 text-align: center;
             }
             
+            .reset {
+                margin-top: 1rem;
+            }
+            
             .nav__item:hover .nav__item:focus {
                 opacity: .75;
                 color: aquamarine;

@@ -6,7 +6,8 @@ var homeAddTwoButton = document.querySelector("#home_plus_two");
 var homeAddThreeButton = document.querySelector("#home_plus_three");
 var homeTotal = document.querySelector("#home-score");
 var guestTotal = document.querySelector("#guest-score");
-
+var resetHomeButton = document.querySelector("#reset-home");
+var resetGuestButton = document.querySelector("#reset-guest");
 var homeScore = 0;
 var guestScore = 0;
 
@@ -14,47 +15,44 @@ var guestScore = 0;
 
 
 function guestAddOne() {
-    guestScore = guestScore + 1;
+    guestScore += 1;
     guestTotal.innerText = guestScore;
-    console.log(guestScore);
-    return guestTotal;
 }
 
 function guestAddTwo() {
-    guestScore = guestScore + 2;
+    guestScore += 2;
     guestTotal.innerText = guestScore;
-    console.log(guestScore);
-    return guestTotal;
 }
 
 function guestAddThree() {
-    guestScore = guestScore + 3;
+    guestScore += 3;
     guestTotal.innerText = guestScore;
-    console.log(guestScore);
-    return guestTotal;
 }
 
 function homeAddOne() {
-    homeScore = homeScore + 1;
+    homeScore += 1;
     homeTotal.innerText = homeScore;
-    console.log(homeScore);
-    return homeTotal;
 }
 
 function homeAddTwo() {
-    homeScore = homeScore + 2;
+    homeScore += 2;
     homeTotal.innerText = homeScore;
-    console.log(homeScore);
-    return homeTotal;
 }
 
 function homeAddThree() {
-    homeScore = homeScore + 3;
+    homeScore += 3;
     homeTotal.innerText = homeScore;
-    console.log(homeScore);
-    return homeTotal;
 }
 
+function resetHome() {
+    homeScore = 0;
+    homeTotal.innerText = homeScore;
+}
+
+function resetGuest() {
+    guestScore = 0;
+    guestTotal.innerText = guestScore;
+}
 
 guestAddOneButton.addEventListener("click", guestAddOne);
 
@@ -68,6 +66,6 @@ homeAddTwoButton.addEventListener("click", homeAddTwo);
 
 homeAddThreeButton.addEventListener("click", homeAddThree);
 
-// guestScore.innerHTML;
+resetHomeButton.addEventListener("click", resetHome);
 
-// homeScore.innerHTML;
+resetGuestButton.addEventListener("click", resetGuest);
