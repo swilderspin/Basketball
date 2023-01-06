@@ -1,0 +1,180 @@
+            /* Box sizing rules */
+            
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+            }
+            /* Remove default margin */
+            
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            p,
+            figure,
+            blockquote,
+            dl,
+            dd {
+                margin: 0;
+            }
+            /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+            
+            ul[role='list'],
+            ol[role='list'] {
+                list-style: none;
+            }
+            /* Set core root defaults */
+            /* Set core body defaults */
+            
+            body {
+                min-height: 100vh;
+                text-rendering: optimizeSpeed;
+                line-height: 1.5;
+            }
+            
+            @font-face {
+                font-family: 'cursed_timer_ulilregular';
+                src: url('./fonts/cursedtimerulil-aznm-webfont.woff2') format('woff2'), url('./fonts/cursedtimerulil-aznm-webfont.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+            /* A elements that don't have a class get default styles */
+            /* Make images easier to work with */
+            
+            img,
+            picture {
+                max-width: 100%;
+                display: block;
+            }
+            /* Inherit fonts for inputs and buttons */
+            
+            input,
+            button,
+            textarea,
+            select {
+                font: inherit;
+            }
+            /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+            
+            @media (prefers-reduced-motion: reduce) {
+                *,
+                *::before,
+                *::after {
+                    animation-duration: 0.01ms !important;
+                    animation-iteration-count: 1 !important;
+                    transition-duration: 0.01ms !important;
+                }
+            }
+            
+            body {
+                font-family: 'Verdana Bold', 'Arial Narrow', Arial, sans-serif;
+                margin: 0;
+                font-size: 1.2rem;
+            }
+            
+            .timer {
+                font-family: 'cursed_timer_ulilregular', sans-serif;
+                font-size: 4rem;
+            }
+            
+            .heading1 {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 3rem;
+                margin: 0 auto;
+            }
+            
+            .main-section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 1rem;
+                max-width: 800px;
+                min-width: 300px;
+                margin: 0 auto;
+            }
+            
+            .team {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                background-color: #1B244A;
+                padding: 3rem;
+                color: #EEEEEE;
+            }
+            
+            .row {
+                display: flex;
+            }
+            
+            .team-label {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: bold;
+                color: #EEEEEE;
+                font-size: 1.7rem;
+            }
+            /* .buttons {} */
+            
+            .keys {
+                background-color: #1B244A;
+                color: #EEEEEE;
+                border-radius: 5px;
+                padding: .4rem 0.6rem;
+                font-family: 'cursed_timer_ulilregular', sans-serif;
+                grid-column: span 1;
+                margin: .2rem;
+                ;
+            }
+            
+            .score {
+                font-family: 'cursed_timer_ulilregular', sans-serif;
+                font-size: 5rem;
+                color: #F94F6D;
+                background-color: #080001;
+                padding: .5rem .5rem -.2rem .5rem;
+                margin: 1rem auto;
+                border-radius: .5rem;
+                width: 100%;
+                text-align: center;
+            }
+            
+            .nav__item:hover .nav__item:focus {
+                opacity: .75;
+                color: aquamarine;
+            }
+            
+            .nav {
+                border: solid blue 1px;
+                width: 100%;
+                margin: 0 auto;
+                background-color: rgb(182, 181, 197);
+                display: flex;
+            }
+            
+            .nav__list {
+                display: flex;
+                border: solid yellow 1px;
+                list-style: none;
+            }
+            
+            .nav__item {
+                border: red solid 1px;
+                padding: .6rem;
+                width: auto;
+            }
+            
+            .nav__link {
+                text-decoration: none;
+                color: #ffffff;
+                border: black solid 1px;
+                font-weight: 600;
+            }
+            
+            .row {
+                display: flex;
+            }
+            
+            .container {
+                border: green solid 1px;
+            }
